@@ -23,8 +23,10 @@ section {
 
 }
 
+/* Section1 */
 #section1 {
-    background-image: url(image/rumah.jpeg);
+    background:rgba(0, 0, 0, 0.4)url(image/rumah.jpeg);
+    background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -50,4 +52,105 @@ section {
     text-align: center;
     padding-bottom: 2em;
     letter-spacing: 4px;
+}
+/* Section2 */
+#section2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+}
+.content-2 h2 {
+    font-weight: 300;
+}
+
+/* Section3 */
+#section3 {
+    display: flex;
+    background-color: var(--background);
+    padding: 5% 5%;
+}
+
+.content-3{
+    justify-content: space-between;
+    color: white;
+}
+
+.content3-image{
+    background:rgba(0, 0, 0, 0.7)url(image/rumah.jpeg);
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content3-image{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.grid-image{
+
+}
+
+
+/* Section4 */
+#section4{
+    padding: 5% 5%;
+}
+.teks-4{
+    text-align: center;
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+}
+.content-map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding-bottom: 2em;
+}
+.content-sosmed hr{
+}
+.content-sosmed{
+    text-align: center;
+}
+
+iframe {
+    border-radius: 5%;
+    width: 300px;
+    height: 300px;
+}
+
+
+/* Section5 */
+#section5 {
+    background:rgba(0, 0, 0, 0.4)url(image/harimau.jpeg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.content-5 h1{
+    display: flex;
+    text-align: center;
+    font-size: 3em;
+}
+
+
+
+
+
+
+
+/* Responsif */
+@media {
+    
 }
