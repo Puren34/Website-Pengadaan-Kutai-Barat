@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: 'Poppins';
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--second-background);
+}
+
+:root{
+    --background: rgb(0, 0, 0);
+    --second-background: rgb(244, 245, 239);
+}
+
+section {
+    min-height: 100vh;
+
+}
+
+#section1 {
+    background-image: url(image/rumah.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.main-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-head h1{
+    display: flex;
+    font-size: 3em;
+    letter-spacing: px ;
+}
+
+.main-head h3{
+    text-align: center;
+    padding-bottom: 2em;
+    letter-spacing: 4px;
+}
