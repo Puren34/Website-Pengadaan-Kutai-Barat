@@ -99,7 +99,7 @@ section {
 
 /* Section4 */
 #section4{
-    padding: 5% 5%;
+    padding: 5% 15%;
 }
 .teks-4{
     text-align: center;
@@ -109,19 +109,28 @@ section {
 .content-map{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2em;
+    justify-content: space-between;
     padding-bottom: 2em;
+    gap: 1em;
 }
-.content-sosmed hr{
+.content-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-.content-sosmed{
+.con-box-left{
     text-align: center;
+}
+
+
+
+.con-box-right{
+
 }
 
 iframe {
     border-radius: 5%;
-    width: 300px;
+    width: 400px;
     height: 300px;
 }
 
@@ -144,7 +153,9 @@ iframe {
     font-size: 3em;
 }
 
-
+footer {
+    background-color: var(--background);
+}
 
 
 
