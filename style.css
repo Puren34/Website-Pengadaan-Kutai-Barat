@@ -296,6 +296,7 @@ span {
     font-weight: 600;
     border: 1px solid black;
     transition: 0.3s ease-in-out;
+    margin-bottom: 3em;
 }
 
 .content6-main a:hover{
