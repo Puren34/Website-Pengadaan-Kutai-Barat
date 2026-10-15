@@ -20,8 +20,9 @@ body{
 
 section {
     min-height: 100vh;
-
 }
+
+img { max-width: 100%; height: auto; }
 
 /* Section1 */
 #section1 {
@@ -42,10 +43,10 @@ section {
     text-align: center;
 }
 
-.main-head h1{
-    display: flex;
-    font-size: 3em;
+.main-head h1 {
+    font-size: clamp(1.4rem, 4vw, 3rem);
     letter-spacing: 1px;
+    padding: 0 1em;
 }
 
 .main-head h3{
@@ -246,7 +247,7 @@ iframe {
 }
 
 span {
-    font-size: 500;
+    font-weight: 500;
 }
 
 /* Section5 */
@@ -385,3 +386,78 @@ footer {
     background-color: var(--background);
 }
 
+/* ===== Tablet (≤ 1024px) ===== */
+@media (max-width: 1024px) {
+    #section4 { padding: 5% 8%; }
+
+    .content3-image { gap: 1.5em; }
+
+    .content-8-content h1 { font-size: 36px; }
+    .content8-image { gap: 1.5em; }
+    .content8-image a { width: 100%; font-size: 14px; }
+
+    .content7-text { padding: 2em; gap: 3em; }
+    .content7-text h1 { font-size: 44px; }
+    .image7 img { width: 100%; max-width: 380px; }
+}
+
+/* ===== HP (≤ 768px) ===== */
+@media (max-width: 768px) {
+    /* Hero */
+    #section1, #section5 { min-height: 80vh; padding: 2em 1.5em; }
+    .main-head h3 { letter-spacing: 2px; font-size: 0.85rem; }
+    .content-5 h1 { font-size: 1.6rem; }
+
+    /* Jam operasional */
+    #section2 { min-height: auto; padding: 4em 1.5em; font-size: 1em; }
+
+    /* Layanan kami */
+    #section3, #section8 { padding: 10% 6%; }
+    .content-3-content h1 { font-size: 1.6rem; }
+    .content3-image,
+    .content8-image {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 1.2em;
+    }
+    .content3-image a { min-height: 180px; padding: 1em; }
+
+    /* Peraturan */
+    .content-8-content h1 { font-size: 28px; text-align: center; }
+    .content8-image a { padding: 1em 0; }
+
+    /* Edukasi */
+    #section7 { min-height: auto; }
+    .content7-main {
+        flex-direction: column;
+        align-items: center;
+        padding: 8% 6%;
+    }
+    .image7 img { width: 100%; max-width: 450px; }
+    .content7-text { padding: 2em 0 0; gap: 1.5em; }
+    .content7-text h1 { font-size: 34px; }
+    .content7-text h3 { font-size: 16px; }
+
+    /* Template */
+    #section6 { min-height: auto; }
+    .content6-main { gap: 2em; padding: 3em 6% 0; }
+    .content6-main h1 { font-size: 32px; }
+    .content6-main h3 { font-size: 16px; }
+    .image6 { min-height: 250px; }
+
+    /* Kunjungi kami */
+    #section4 { padding: 10% 6%; min-height: auto; }
+    .content-map { flex-direction: column; align-items: stretch; }
+    iframe { width: 100%; height: 280px; }
+    .content-box { flex-direction: column; gap: 2em; align-items: stretch; }
+    .con-box-right h3 { height: auto; }
+}
+
+/* ===== HP kecil (≤ 480px) ===== */
+@media (max-width: 480px) {
+    .content7-text h1,
+    .content6-main h1 { font-size: 26px; }
+    .content-8-content h1 { font-size: 24px; }
+    .socmed-box a { padding: 0.8em; font-size: 14px; }
+    .socmed-box svg { width: 36px; }
+}
